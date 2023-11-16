@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <button onclick="myFunction(1)">open</button>
+     <img id="cat" src="https://media.tenor.com/rz4kOurhQ0QAAAAC/big-mouth-cat.gif" width="400px" height="450px">
+
+     <button onclick="myFunction(0)">close</button>
+
+     <script>
+        function myFunction(sw){
+              let open;
+             switch(sw){
+             case "1":
+             open = "opencat.png";
+             break;
+
+
+             case "(0)":
+             open = "closecat.png";
+             }
+            
+             document.getElementById("cat").src= open;
+        }
+
+
+
+
+     </script>
+</body>
+</html>
